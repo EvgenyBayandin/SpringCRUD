@@ -19,12 +19,12 @@ public class PersonDAO {
         people.add(new Person(++PEOPLE_COUNT, "Jill"));
     }
 
-    public List<Person> index(){
+    public List<Person> index() {
         return people;
     }
 
-    public Person show(int id){
-        return people.stream().filter(person -> person.getId() == id).findFirst().orElse(null);
+    public Person show(int id) {
+        return people.stream().filter(person -> person.getId() == id).findAny().orElse(null);
     }
 
     public void save(Person person) {

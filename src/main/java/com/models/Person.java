@@ -1,7 +1,7 @@
 package com.models;
 
 public class Person {
-    private  int id;
+    private int id;
     private String name;
 
     public Person(int id, String name) {

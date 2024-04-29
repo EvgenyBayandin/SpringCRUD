@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393ca4e8-6aad-4f17-9322-002e9273320a" name="Changes" comment="Updated PeopleController and views">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+    <list default="true" id="393ca4e8-6aad-4f17-9322-002e9273320a" name="Changes" comment="Updated PeopleController and views, added create new person method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/models/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714394297601</updated>
-      <workItem from="1714394298683" duration="9234000" />
+      <workItem from="1714394298683" duration="10005000" />
     </task>
     <task id="LOCAL-00001" summary="Create CRUD Application">
       <option name="closed" value="true" />
@@ -220,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714402946616</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated PeopleController and views, added create new person method">
+      <option name="closed" value="true" />
+      <created>1714422473962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714422473962</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +238,7 @@
     <MESSAGE value="Added PersonDAO.java" />
     <MESSAGE value="Updated PeopleController" />
     <MESSAGE value="Updated PeopleController and views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated PeopleController and views" />
+    <MESSAGE value="Updated PeopleController and views, added create new person method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated PeopleController and views, added create new person method" />
   </component>
 </project>
