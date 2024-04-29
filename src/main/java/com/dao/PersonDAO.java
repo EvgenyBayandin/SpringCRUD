@@ -3,8 +3,9 @@ package com.dao;
 import java.util.List;
 import java.util.ArrayList;
 import com.models.Person;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class PersonDAO {
     private List<Person> people;
 
