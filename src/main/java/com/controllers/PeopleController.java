@@ -7,6 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import com.dao.PersonDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import com.models.Person;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 @RequestMapping("/people")
@@ -22,13 +25,25 @@ public class PeopleController {
     @GetMapping()
     public String index(Model model){
         model.addAttribute("people", personDAO.index());
-        return "/people/index";
+        return "people/index";
 }
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model){
         model.addAttribute("person", personDAO.show(id));
-        return "/people/show";
+        return "people/show";
     }
+
+    @GetMapping("/new")
+    public String newPerson(@ModelAttribute("person") Person person){
+        return "people/new";
+    }
+
+    @PostMapping()
+    public String create(@ModelAttribute("person") Person person){
+        personDAO.save(person);
+        return "redirect:/people";
+    }
+
 
 }
